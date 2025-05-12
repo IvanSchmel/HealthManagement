@@ -48,13 +48,13 @@ namespace HealthManagement
             }
             MessageBox.Show($"Сон на {date} отслежен: {hours} часов.");
         }
-        //public void DisplayActivityReport()
-        //{
-        //    var reportForm = new ReportForm();
-        //    reportForm.ActivityTracking = activityTracking;
-        //    reportForm.NutritionTracking = nutritionTracking;
-        //    reportForm.SleepTracking = sleepTracking;
-        //    reportForm.ShowDialog();
-        //}
+        public void DisplayActivityReport()
+        {
+            var reportForm = new ReportForm();
+            reportForm.ActivityTracking = activityTracking;
+            reportForm.NutritionTracking = nutritionTracking;
+            reportForm.SleepTracking = sleepTracking;
+            reportForm.ShowDialog();
+        }
     }
 }
